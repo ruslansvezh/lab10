@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	    setlocale(0, "");
+		int N, i=1;
+		double A,sum=1;
+		cout << "Введите целое число A: ";
+		cin >> A;
+		cout << "Введите степень числа-N: ";
+		cin >> N;
+		if (N > 0)
+		{
+			while (i <= N)
+			{
+				sum = sum + pow(A, i);
+				i++;
+			}
+			cout << "Сумма чисел А в степени от 1 до N= " << sum;
+		}
+		else
+		{
+			cout << "Введены неверные данные!" << endl;
+		}
+	} 
